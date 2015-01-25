@@ -4,7 +4,7 @@
 /* Basic */
 
 	body, #skel-layers-wrapper {
-		background: #f3f6fa;
+		background: rgba(165,120,25,0.12); /* #f3f6fa */
 	}
 
 	body.is-loading * {
@@ -35,7 +35,7 @@
 		-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: #990000; /* #3fb1a3 */
+		color: #3fb1a3;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -51,7 +51,7 @@
 	p {
 		margin: 0 0 2em 0;
 		text-align: justify;
-		text-justify: inter-word;
+		justify-content: space-around;
 	}
 
 	ul, ol, dl, table, blockquote {
@@ -248,13 +248,14 @@
 	}
 
 		.image:before {
-			background: url("images/overlay.png");
+			/*background: url("images/overlay.png");*/
 			content: '';
 			height: 100%;
 			left: 0;
 			position: absolute;
 			top: 0;
 			width: 100%;
+			opacity: 60%;
 		}
 
 		.image.fit {
@@ -269,11 +270,15 @@
 		.image.featured {
 			display: block;
 			margin: 0 0 2em 0;
+			height: 280px;
+			overflow: hidden;
 		}
 
 			.image.featured img {
+				width: auto; 
+				max-height: 100%;
 				display: block;
-				width: 100%;
+				align: center;
 			}
 
 /* Icon */
@@ -381,6 +386,37 @@
 				line-height: 1em;
 			}
 
+		.icon.logo {
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			border: 0;
+			border-radius: 100%;
+			cursor: default;
+			display: inline-block;
+			height: 1.5em;
+			right: 0.2em;
+			line-height: 1.5em;
+			top: 0.3em;
+			width: 1.5em;
+			margin: 0 0 0 0;
+			opacity: 0.85;			
+		}
+			
+			.icon.logo:hover {
+				-moz-transition: all 0.2s ease-in-out;
+				-webkit-transition: all 0.2s ease-in-out;
+				-o-transition: all 0.2s ease-in-out;
+				-ms-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+				bottom: -2em;
+				opacity: 0.95;
+				height: 15em;
+				width: 15em;
+			}
+		
 		.icon > .label {
 			display: none;
 		}
