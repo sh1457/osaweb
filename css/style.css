@@ -35,7 +35,7 @@
 		-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: #990000; <!--#3fb1a3-->
+		color: #990000; /* #3fb1a3 */
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -542,7 +542,7 @@
 		input[type="reset"].special,
 		.button.special {
 			background: #cc0000;
-			border-color: #cc0000; <!--#83d3c9-->
+			border-color: #cc0000; /* #83d3c9 */
 			color: white !important;
 		}
 
@@ -550,7 +550,7 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #ff0000 !important; <!--#96dad1-->
+				background: #ff0000 !important; /* #96dad1 */
 				border-color: #ff0000 !important;
 			}
 
@@ -582,7 +582,7 @@
 		}
 
 		.wrapper.style2 {
-			background-color: rgba(153, 0, 0, 0.875); <!--83d3c9-->
+			background-color: rgba(153, 0, 0, 0.875); /* #83d3c9 */
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -597,7 +597,7 @@
 			.wrapper.style2 .button.special {
 				background: white;
 				border-color: white;
-				color: #990000 !important; 	<!--83d3c9-->
+				color: #990000 !important; 	/* #83d3c9 */
 			}
 
 				.wrapper.style2 .button.special:hover {
@@ -783,7 +783,7 @@
 			}
 
 			.dropotron > li:hover > a {
-				background: #83d3c9;
+				background: #660000; /* #83d3c9; */
 				color: white;
 			}
 
