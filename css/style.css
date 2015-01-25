@@ -1,12 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
-/*
-	Twenty by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Basic */
 
 	body, #skel-layers-wrapper {
@@ -41,7 +35,7 @@
 		-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: #3fb1a3;
+		color: #990000; <!--#3fb1a3-->
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -54,12 +48,19 @@
 		font-weight: 400;
 	}
 
-	p, ul, ol, dl, table, blockquote {
+	p {
+		margin: 0 0 2em 0;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	ul, ol, dl, table, blockquote {
 		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
+		text-align: center;
 		font-weight: 300;
 		line-height: 1.75em;
 		margin-bottom: 1em;
@@ -204,7 +205,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #83d3c9;
+			border-color: #660000;
 		}
 
 	input[type="text"],
@@ -329,6 +330,15 @@
 
 				.icon.circle.fa-facebook:hover {
 					background: #829bc9;
+				}
+
+			.icon.circle.fa-google {
+				background: #db6b67;
+				color: white;
+			}
+
+				.icon.circle.fa-google:hover {
+					background: #df7b77;
 				}
 
 			.icon.circle.fa-google-plus {
@@ -531,8 +541,8 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: #83d3c9;
-			border-color: #83d3c9;
+			background: #cc0000;
+			border-color: #cc0000; <!--#83d3c9-->
 			color: white !important;
 		}
 
@@ -540,8 +550,8 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: #ff0000 !important; <!--#96dad1-->
+				border-color: #ff0000 !important;
 			}
 
 		input[type="button"].fit,
@@ -572,7 +582,7 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
+			background-color: rgba(153, 0, 0, 0.875); <!--83d3c9-->
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -587,7 +597,7 @@
 			.wrapper.style2 .button.special {
 				background: white;
 				border-color: white;
-				color: #83d3c9 !important;
+				color: #990000 !important; 	<!--83d3c9-->
 			}
 
 				.wrapper.style2 .button.special:hover {
